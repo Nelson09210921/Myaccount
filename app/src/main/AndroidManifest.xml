@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapp.MyAccount">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myaccount">
+        <activity android:name="com.myapp.MyAccount.modificarpeso"></activity>
+        <activity android:name="com.myapp.MyAccount.anadirpeso" />
+        <activity android:name="com.myapp.MyAccount.Modificar" />
+        <activity android:name="com.myapp.MyAccount.anadir" />
+        <activity android:name="com.myapp.MyAccount.Listaprincipal" />
+        <activity android:name="com.myapp.MyAccount.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

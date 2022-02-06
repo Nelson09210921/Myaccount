@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listaprincipal">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="415dp"
+        android:layout_height="171dp"
+        android:background="#1EE9A9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tw_costetotal"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/Costetotal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/flotanteadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="324dp"
+            android:layout_marginLeft="324dp"
+            android:layout_marginTop="144dp"
+            android:clickable="true"
+            android:contentDescription="@string/agregar_producto"
+            app:backgroundTint="#FFEB3B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:focusable="true" />
+            -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/principal"
+            app:menu_colorNormal="#FFEB3B"
+            android:backgroundTint="@color/black"
+            android:layout_width="386dp"
+            android:layout_height="202dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            app:menu_fab_label="Menú">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/submenu1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="enviar2"
+                android:src="@drawable/verduras"
+                app:fab_label="Por peso" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/submenu2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="enviar1"
+                android:src="@drawable/productos"
+                app:fab_label="Por und" />
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

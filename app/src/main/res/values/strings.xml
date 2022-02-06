@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Myaccount</string>
+    <string name="bottonmilista">Mi lista</string>
+    <string name="Bienvenido">My account</string>
+    <string name="Costetotal">Costetotal</string>
+    <string name="nombreproducto">Ingrese el nombre</string>
+    <string name="tv_cantidad">Cantidad</string>
+    <string name="tv_preciomiles">Precio UND en milesimas</string>
+    <string name="tv_preciopesos">Precio UND en pesos</string>
+    <string name="buttonagregar">Agregar</string>
+    <string name="agregar_producto">Agregar producto</string>
+    <string name="mensaje_informacion">Agregar miles y luego pesos</string>
+    <string name="nombre">Nombre:</string>
+    <string name="todo">TODO</string>
+    <string name="tv_modificarcantidad">Cantidad a modificar o a eliminar</string>
+    <string name="tv_milesmodificar">Miles UND a modificar</string>
+    <string name="tv_pesosmodificar">Pesos UND a modificar</string>
+    <string name="bottonmodificar">Modificar</string>
+    <string name="bottoneliminar">Eliminar</string>
+    <string name="cantactual">Cantidad actual</string>
+    <string name="precio_actual">Precio UND actual</string>
+    <string name="precioxkilo">Precio por kilo</string>
+    <string name="peso">Peso neto en gr</string>
+    <string name="agregar">Agregar</string>
+    <string name="cincuenta">¿50?</string>
+
+
+</resources>

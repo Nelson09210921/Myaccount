@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@drawable/aguamarina"
+
+    >
+
+    <ImageView
+        android:id="@+id/emoji"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/emoji"/>
+    <TextView
+        android:id="@+id/aviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has alcanzado el limite de productos permitidos en esta versión, para vivir una experiencia sin limites, descarga  la versión completa aqui!!"
+
+        android:textSize="20sp"
+        android:layout_centerHorizontal="false"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/emoji"/>
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="link aqui"
+        android:textSize="20sp"
+        android:layout_below="@id/aviso"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
