@@ -76,7 +76,7 @@ public class anadirpeso extends AppCompatActivity {
         String pesoneto_string = pesoneto.getText().toString();
 
         if(!nombre_string.isEmpty() && !pesokilo_string.isEmpty() && !pesoneto_string.isEmpty()){
-            /*if(contador <30){*/
+            if(contador <30){
 
 
                 conn = new AdminSQLiteOpenHelper(getApplicationContext(), "productos", null, 1);
@@ -124,13 +124,13 @@ public class anadirpeso extends AppCompatActivity {
                     Toast.makeText(this, "no existe", Toast.LENGTH_SHORT).show();
                 }
 
-            /*}else{
+            }else{
                 Toast.makeText(this, "Para poder agregar mas productos es necesario instalar la version completa", Toast.LENGTH_SHORT).show();
                 mdialog = new Dialog(this);
                 mdialog.setContentView(R.layout.popup);
                 mdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 mdialog.show();
-            }*/
+            }
 
 
         }else{

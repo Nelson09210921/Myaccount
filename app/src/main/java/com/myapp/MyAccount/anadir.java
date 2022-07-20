@@ -154,7 +154,6 @@ public class anadir extends AppCompatActivity {
 
         int contador = getIntent().getIntExtra("contadorpremium", 0);
         //Toast.makeText(this, String.valueOf(contador), Toast.LENGTH_SHORT).show();
-        if (contador < 30){
 
 
         cincuenta = findViewById(R.id.switch1);
@@ -237,17 +236,11 @@ public class anadir extends AppCompatActivity {
 
             cursor.close();
         }catch (Exception e){
-            Toast.makeText(this, "no existe", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No existe", Toast.LENGTH_SHORT).show();
         }
 
 
-        }else{
-            Toast.makeText(this, "Para poder agregar mas productos es necesario instalar la version completa", Toast.LENGTH_LONG).show();
-            mdialog = new Dialog(this);
-            mdialog.setContentView(R.layout.popup);
-            mdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            mdialog.show();
-        }
+
 
 
     }
